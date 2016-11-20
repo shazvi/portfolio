@@ -1,3 +1,10 @@
+<?php
+if($_SERVER["HTTP_HOST"] != "localhost") {
+    if( !isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && ($_SERVER["HTTP_X_FORWARDED_PROTO"] != "https") ) {
+        header('Location: https://shazvi.com');
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
     <title>Shazvi's Portfolio</title>
 
@@ -19,8 +27,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,15 +37,17 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- MYWOT VERIFICATION -->
+    <meta name="wot-verification" content="c31c14fa48c44a3df9ff"/>
+
+    <!-- GA VERIFICATION -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-38573950-4', 'auto');
+        ga('create', 'UA-38573950-5', 'auto');
         ga('send', 'pageview');
-
     </script>
 
 </head>
@@ -139,6 +149,16 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/marks.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -148,17 +168,7 @@
                         <img src="img/portfolio/Azan App Screen2.png" style="height:260px; width:360px;" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-4 portfolio-item" style="display: none;">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -183,10 +193,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka(that little island south of India, for those unfamiliar). I'm <?php echo(floor((time() - strtotime("1989-04-27"))/31556926));//current age?> years old and while I have a background in accounting, I'm a tech enthusiast at heart who is conflicted between web programming and system administration. </p>
+                    <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka (that little island south of India, for those unfamiliar). I'm <?php echo(floor((time() - strtotime("1989-04-27"))/31556926));//current age?> years old and while I have a background in accounting, I'm a tech enthusiast at heart with a passion for web programming. </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>I'm currently working as a web developer and plan on geting qualified in that field. That's about all there is to know about me, so let's move on.</p>
+                    <p>I work as a web developer by profession and build my own sites in my spare time. I have also ventured into developing android apps which are mostly elemental at this stage. That's about all there is to know about me.</p>
                 </div>
                 <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
@@ -258,8 +268,9 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Contact</h3>
+                        <h3>Talk to me</h3>
                         <p><a target="_blank" href="mailto:shazvi@outlook.com">shazvi@outlook.com</a> </p>
+                        <a href="https://preview.cubbyusercontent.com/pl/cv.pdf/_7fe7cb7302a14bf79ca84089469ce704" target="_blank">View CV</a>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
@@ -274,13 +285,13 @@
                                 <a href="https://twitter.com/cybertox544" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://lk.linkedin.com/pub/shazvi-ahmed/a1/b0/a10" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About This Site</h3>
-                        <p>This site is built on top of Freelance. It's a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3>Where to find me</h3>
+                        <p>Colombo-06, Sri Lanka <a target="_blank" href="https://goo.gl/maps/PpCpU"><img style="height: 25px; padding-left: 5px;" src="img/map.png"></a></p>
                     </div>
                 </div>
             </div>
@@ -316,9 +327,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2><a target="_blank" href="http://memento.shazvi.com/">Memento</a></h2>
+                            <h2><a target="_blank" href="https://memento.shazvi.com/">Memento</a></h2>
                             <hr class="star-primary">
-                            <a target="_blank" href="http://memento.shazvi.com/"><img src="img/portfolio/memento.png" class="img-responsive img-centered" alt=""></a>
+                            <a target="_blank" href="https://memento.shazvi.com/"><img src="img/portfolio/memento.png" class="img-responsive img-centered" alt=""></a>
                             <p>I started this site as part of my final project for <a target="_blank" href="https://www.edx.org/courses/HarvardX/CS50x/2012/about">CS50x</a> and have been maintaining it as a hobby ever since. It's a website written in php that saves notes, memos, reminders in an SQL database which also demonstrates the use of <a target="_blank" href="https://mailgun.com">Mailgun</a> and cron jobs to send the reminders as an email on the due date. The main page displays the notes, which can be stored in multiple notebooks and sorted by any category thanks to Kryogenix's <a target="_blank" href="http://www.kryogenix.org/code/browser/sorttable/">sorttable</a> plugin. The aesthetics are powered by <a target="_blank" href="http://getbootstrap.com/2.3.2/index.html">Twitter Bootstrap</a> and <a target="_blank" href="http://jqueryui.com">Jquery ui</a> while the calendar view allows the user to see all the notes/entries for the month in an organized table. Furthermore, the site also has an instant search feature that allows you to search through all your notes while typing or by tags, with <a target="_blank" href="http://bartaz.github.io/sandbox.js/jquery.highlight.html">text highlighting</a>. The standard title banners are generated by <a target="_blank" href="http://www.textfx.co/">Textfx</a> and <a target="_blank" href="http://neswork.com/logo-generator/twitter-font">Twitter Font</a>.</p>
                             <ul class="list-inline item-details">
                                 <li>Frameworks:
@@ -347,11 +358,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2><a href="http://azan.shazvi.com/" target="_blank">Azan</a></h2>
+                            <h2><a href="https://azan.shazvi.com/" target="_blank">Azan</a></h2>
                             <hr class="star-primary">
-                            <a href="http://azan.shazvi.com/" target="_blank"><img src="img/portfolio/azan.png" class="img-responsive img-centered" alt=""></a>
+                            <a href="https://azan.shazvi.com/" target="_blank"><img src="img/portfolio/azan.png" class="img-responsive img-centered" alt=""></a>
 
-                            <p>A website that shows accurate Azan times based on hard-coded times. Currently only Colombo times are supported, but any city can be added by simply including a json file with time values. This site has also been turned into an app using the <a target="_blank" href="https://github.com/rogerwang/node-webkit/">Node-Webkit</a> framework.</p>
+                            <p>A website that shows accurate Azan times based on hard-coded times. Currently only Colombo times are supported, but any city can be added by simply including a json file with time values. This site has also been turned into an app using the <a target="_blank" href="http://nwjs.io/">NW.js</a> framework.</p>
                             <ul class="list-inline item-details">
                                 <li>Frameworks:
                                     <strong>Bootstrap2, Node.js, Node-Webkit</strong>
@@ -379,44 +390,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2><a target="_blank" href="http://chrome.shazvi.com">Chrome Bookmarks</a></h2>
+                            <h2><a target="_blank" href="https://chrome.shazvi.com">Chrome Bookmarks</a></h2>
                             <hr class="star-primary">
-                            <a target="_blank" href="http://chrome.shazvi.com"><img src="img/portfolio/chrome.png" class="img-responsive img-centered" alt=""></a>
+                            <a target="_blank" href="https://chrome.shazvi.com"><img src="img/portfolio/chrome.png" class="img-responsive img-centered" alt=""></a>
                             <p>Allows you to access your chrome bookmarks from anywhere in the world whether you're at a friend's computer, a net cafe, or halfway across the world. The site uses a custom API to access your chrome's 'Bookmark' file through cloud syncing. Details will be explaned on the site.</p>
                             <ul class="list-inline item-details">
                                 <li>Frameworks:
-                                    <strong>Materialize.css, CakePHP</strong>
+                                    <strong>Bootstrap3, Yii-PHP</strong>
                                 </li>
                                 <li>Source:
                                     <strong><a href="https://github.com/shazvi/chrome" target="_blank">Github</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Minimal Azan for Android</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/Azan App Screen.png" class="img-responsive img-centered" alt="">
-                            <p>A minimal app that shows perfectly accurate Azan times based on hard-coded times. Currently only Colombo times are supported, but any city can be added by simply including a json file with time values.</p>
-                            <ul class="list-inline item-details">
-                                <li>Source:
-                                    <strong><a href="https://github.com/shazvi/azan-android" target="_blank">Github</a></strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -438,22 +421,44 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2><a target="_blank" href="https://marks.shazvi.com">Bookmarks</a></h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <a target="_blank" href="https://marks.shazvi.com"><img src="img/portfolio/marks.png" class="img-responsive img-centered" alt=""></a>
+                            <p>Allows you to save bookmarks online that can be accessed from anywhere, any browser, any device. Keeps your bookmarks safely backed up and in sync.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                                <li>Frameworks:
+                                    <strong>Materialize.css, Laravel</strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Source:
+                                    <strong><a href="https://github.com/shazvi/marks" target="_blank">Github</a></strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <a href="https://play.google.com/store/apps/details?id=com.shazvi.azan" target="_blank"><h2>Azan Notifier for Android</h2></a>
+                            <hr class="star-primary">
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.shazvi.azan"><img src="img/portfolio/Azan App Screen.png" class="img-responsive img-centered" alt=""></a>
+                            <p>A minimal app that shows perfectly accurate Azan times based on hard-coded times. Currently only Colombo times are supported, but any city can be added by simply including a json file with time values.</p>
+                            <ul class="list-inline item-details">
+                                <li>Source:
+                                    <strong><a href="https://github.com/shazvi/azan-android" target="_blank">Github</a></strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -508,7 +513,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
