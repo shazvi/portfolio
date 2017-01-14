@@ -396,7 +396,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                             <p>Allows you to access your chrome bookmarks from anywhere in the world whether you're at a friend's computer, a net cafe, or halfway across the world. The site uses a custom API to access your chrome's 'Bookmark' file through cloud syncing. Details will be explaned on the site.</p>
                             <ul class="list-inline item-details">
                                 <li>Frameworks:
-                                    <strong>Bootstrap3, Yii-PHP</strong>
+                                    <strong>Bootstrap3</strong>
                                 </li>
                                 <li>Source:
                                     <strong><a href="https://github.com/shazvi/chrome" target="_blank">Github</a></strong>
