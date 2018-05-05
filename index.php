@@ -118,7 +118,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
+                <!-- <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -127,7 +127,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                         </div>
                         <img src="img/portfolio/memento.png" class="img-responsive" style="height:;" alt="">
                     </a>
-                </div>
+                </div> -->
 
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
@@ -176,10 +176,10 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka (that little island south of India, for those unfamiliar). I'm <?php echo(floor((time() - strtotime("1989-04-27"))/31556926));//current age?> years old and while I have a background in accounting, I'm a tech enthusiast at heart with a passion for web programming. </p>
+                    <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka (that little island south of India, for those unfamiliar). I'm <?php echo(floor((time() - strtotime("1989-04-27"))/31556926));//current age?> years old and while I have a background in accounting, I'm a tech enthusiast at heart with a passion for programming. </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>I work as a web developer by profession and build my own sites in my spare time. I have also ventured into developing android apps which are mostly elemental at this stage. That's about all there is to know about me.</p>
+                    <p>I work as a software developer by profession and work on my own software projects in my spare time. I primarily focus on mobile development, web development and nodejs. That's about all there is to know about me.</p>
                 </div>
                 <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
@@ -250,10 +250,9 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-4 col-md-offset-2">
                         <h3>Talk to me</h3>
                         <p><a target="_blank" href="mailto:shazvi@outlook.com">shazvi@outlook.com</a> </p>
-                        <a href="https://preview.cubbyusercontent.com/pl/cv.pdf/_7fe7cb7302a14bf79ca84089469ce704" target="_blank">View CV</a>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
@@ -272,10 +271,9 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <!-- <div class="footer-col col-md-4">
                         <h3>Where to find me</h3>
-                        <p>Colombo-06, Sri Lanka <a target="_blank" href="https://goo.gl/maps/PpCpU"><img style="height: 25px; padding-left: 5px;" src="img/map.png"></a></p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
