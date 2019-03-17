@@ -75,17 +75,16 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
+                    <!--
                     <li class="page-scroll">
-                        <a href="#skills">Skills</a>
+                        <a href="mailto:shazvi@outlook.com" target="_blank">Contact Me</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#employment">Employment</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#values">Values</a>
-                    </li>
+                    -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -102,14 +101,13 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                     <div class="intro-text">
                         <span class="name">Shazvi Ahmed</span>
                         <hr class="star-light">
-                        <span class="skills">Full stack developer - Tech Enthusiast</span>
+                        <span class="skills">Programmer - Tech Enthusiast</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <?php if(false) { ?>
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
@@ -166,146 +164,86 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
             </div>
         </div>
     </section>
-    <?php } ?>
 
     <!-- About Section -->
-    <section id="about">
+    <section class="success" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
-                    <hr class="star-primary">
+                    <hr class="star-light">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-lg-offset-2">
                     <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka (that little island south of India, for those unfamiliar). I'm <?php echo(floor((time() - strtotime("1989-04-27"))/31556926));//current age?> years old and while I have a background in accounting, I'm a tech enthusiast at heart with a passion for programming. </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>I've always been excited about being able to solve problems using code. Most of my personal projects were created as a solution to problems I had, whether it's syncing files between storage providers, viewing my bookmarks outside my browser, or deciding what's for dinner.</p>
+                    <p>I work as a software developer by profession and work on my own software projects in my spare time. I primarily focus on mobile development, web development and nodejs. That's about all there is to know about me.</p>
                 </div>
-                <div class="col-lg-4">
-                    <p>I've worked as a software developer for more than 4 years. During this time, I have acquired skills in various areas of software development ranging from backend, frontend and mobile development to project coordination and DevOps.</p>
-                </div>
+                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
+                </div> -->
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="success" id="skills">
+    <!-- Contact Section -->
+    <!-- <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Skills</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h4>JS FRONTEND</h4>
-                    <ul>
-                        <li>Angular 2+</li>
-                        <li>Typescript</li>
-                        <li>Single page app in plain js, complete with navigation and page transition</li>
-                        <li>jQuery</li>
-                        <li>jQuery mobile</li>
-                        <li>Google analytics</li>
-                        <li>Pusher</li>
-                        <li>Twitter Bootstrap</li>
-                    </ul>
-
-                    <h4>JS BACKEND</h4>
-                    <ul>
-                        <li>Rest API with authentication</li>
-                        <li>Nodejs</li>
-                        <li>expressJS</li>
-                        <li>Firebase real-time notifications</li>
-                        <li>Google sign in</li>
-                    </ul>
-
-                    <h4>PHP</h4>
-                    <ul>
-                        <li>CodeIgniter</li>
-                        <li>Laravel</li>
-                        <li>Pusher</li>
-                        <li>Elasticsearch</li>
-                    </ul>
-
-                    <h4>MOBILE DEVELOPMENT</h4>
-                    <ul>
-                        <li>Native Android (Java)</li>
-                        <li>React native</li>
-                        <li>Firebase real-time push notifications, analytics and crash reporting</li>
-                        <li>CodePush</li>
-                        <li>Social sign in: Google, Facebook, LinkedIn, Twitter, Microsoft</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Employment Section -->
-    <section id="employment">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Employment</h2>
+                    <h2>Contact Me</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h4>Software Engineer</h4>
-                    <h5>Villvay Systems, Dehiwala, Sri Lanka</h5>
-                    <h6>September 2014 to January 2019</h6>
-                    <br>
-                    <p>
-                        Initially, I was recruited as a backend developer and after working for one year in that
-                        capacity, I took on the additional role of project coordinator along with backend duties. I
-                        received plenty of positive feedback from the clients during this time, especially about my
-                        professionalism and transparency. Next up I worked on one more project as a backend
-                        developer for a complex fully-fledged social networking web app.
-                    </p>
-                    <p>
-                        I then transitioned to a full stack role, working on a Angular2/Nodejs/expressJs/SQL web
-                        app, before moving on to building another REST API in nodejs/ExpressJs/sql for a social
-                        network SPA done by a separate team.
-                    </p>
-                    <p>
-                        After 2 and a half years, I transitioned to mobile development by building a native Android
-                        application in Java. This was followed by building a cross-platform mobile application
-                        using React native. 2 years into mobile development, I was a senior developer and was
-                        leading the mobile division at Villvay until I eventually resigned in order pursue my own
-                        goals as a freelance developer.
-                    </p>
+                    To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently.
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="success" id="values">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Values</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p><b>Transparency</b>: be clear and open with the team/clients about project status, progress, issues</p>
-                    <p><b>Formality</b>: be organized, structured and documented so that the team/clients always have a full picture and miscommunication is avoided</p>
-                    <p><b>Code quality</b>: adhere to best practices/industry standards (sometimes at the cost of time)</p>
-                    <p><b>Validation</b>: ensure the team/clients are satisfied with process/result, open to feedback on areas to improve</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- todo: display personal projects -->
-    <!-- todo: display github repos -->
-    <!-- todo: display stack overflow answers -->
+    </section> -->
 
     <!-- Footer -->
     <footer class="text-center">
@@ -314,26 +252,22 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                 <div class="row">
                     <div class="footer-col col-md-4 col-md-offset-2">
                         <h3>Talk to me</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a target="_blank" title="shazvi@outlook.com" href="mailto:shazvi@outlook.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
-                            </li>
-                            <li>
-                                <a title="shazvi.ahmed" href="skype:shazvi.ahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-skype"></i></a>
-                            </li>
-                        </ul>
+                        <p><a target="_blank" href="mailto:shazvi@outlook.com">shazvi@outlook.com</a> </p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a target="_blank" href="https://www.facebook.com/shazvi.ahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/shazvi.ahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://twitter.com/cybertox544" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://plus.google.com/u/0/117183548329016181720/posts" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://lk.linkedin.com/pub/shazvi-ahmed/a1/b0/a10" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://twitter.com/cybertox544" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://lk.linkedin.com/pub/shazvi-ahmed/a1/b0/a10" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
