@@ -1,8 +1,4 @@
 <?php
-// test string
-// test string
-// test string
-// test string
 if($_SERVER["HTTP_HOST"] != "localhost") {
     if( !isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && ($_SERVER["HTTP_X_FORWARDED_PROTO"] != "https") ) {
         header('Location: https://shazvi.com');
