@@ -98,7 +98,11 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <picture>
+                        <source srcset="img/profile.webp" type="image/webp">
+                        <source srcset="img/profile.png" type="image/png">
+                        <img class="img-responsive" src="img/profile.png" alt="Profile picture">
+                    </picture>
                     <div class="intro-text">
                         <span class="name">Shazvi Ahmed</span>
                         <hr class="star-light">
@@ -362,6 +366,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
     </div>
 
     <!-- Portfolio Modals -->
+    <?php if(false) { ?>
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -487,6 +492,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
             </div>
         </div>
     </div>
+    <?php } ?>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
