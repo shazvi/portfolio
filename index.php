@@ -17,7 +17,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <title>Shazvi's Portfolio</title>
+    <title>Shazvi Ahmed</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
