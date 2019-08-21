@@ -1,5 +1,5 @@
 <?php
-if($_SERVER["HTTP_HOST"] != "localhost") {
+if(strpos($_SERVER["HTTP_HOST"], "localhost") === false) {
     if( !isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && ($_SERVER["HTTP_X_FORWARDED_PROTO"] != "https") ) {
         header('Location: https://shazvi.com');
     }
@@ -106,7 +106,7 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                     <div class="intro-text">
                         <span class="name">Shazvi Ahmed</span>
                         <hr class="star-light">
-                        <span class="skills">Full stack developer - Tech Enthusiast</span>
+                        <span class="skills">Full stack developer | Mobile developer | Tech Enthusiast</span>
                     </div>
                 </div>
             </div>
@@ -202,44 +202,37 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h4>JS FRONTEND</h4>
-                    <ul>
-                        <li>Angular 2+</li>
-                        <li>Typescript</li>
-                        <li>Single page app in plain js, complete with navigation and page transition</li>
-                        <li>jQuery</li>
-                        <li>jQuery mobile</li>
-                        <li>Google analytics</li>
-                        <li>Pusher</li>
-                        <li>Twitter Bootstrap</li>
-                    </ul>
-
-                    <h4>JS BACKEND</h4>
-                    <ul>
-                        <li>Rest API with authentication</li>
-                        <li>Nodejs</li>
-                        <li>expressJS</li>
-                        <li>Firebase real-time notifications</li>
-                        <li>Google sign in</li>
-                    </ul>
-
+                <div class="col-lg-3 skills-header">
+                    <h4>JS Frontend</h4>
+                    Angular 2+<br>
+                    Typescript<br>
+                    Single page app in plain js, complete with navigation and page transition<br>
+                    jQuery<br>
+                    jQuery mobile<br>
+                    Google analytics<br>
+                    Pusher<br>
+                    Twitter Bootstrap<br>
+                </div>
+                <div class="col-lg-3 skills-header">
+                    <h4>JS Backend</h4>
+                    Rest API with authentication<br>
+                    Nodejs<br>
+                    expressJS<br>
+                    Firebase real-time notifications<br>
+                </div>
+                <div class="col-lg-3 skills-header">
                     <h4>PHP</h4>
-                    <ul>
-                        <li>CodeIgniter</li>
-                        <li>Laravel</li>
-                        <li>Pusher</li>
-                        <li>Elasticsearch</li>
-                    </ul>
-
-                    <h4>MOBILE DEVELOPMENT</h4>
-                    <ul>
-                        <li>Native Android (Java)</li>
-                        <li>React native</li>
-                        <li>Firebase real-time push notifications, analytics and crash reporting</li>
-                        <li>CodePush</li>
-                        <li>Social sign in: Google, Facebook, LinkedIn, Twitter, Microsoft</li>
-                    </ul>
+                    Laravel<br>
+                    Pusher<br>
+                    Elasticsearch<br>
+                    CodeIgniter<br>
+                </div>
+                <div class="col-lg-3 skills-header">
+                    <h4>Mobile</h4>
+                    Native Android (Java)<br>
+                    React native<br>
+                    Firebase<br>
+                    CodePush<br>
                 </div>
             </div>
         </div>
@@ -273,11 +266,11 @@ if($_SERVER["HTTP_HOST"] != "localhost") {
                         network SPA done by a separate team.
                     </p>
                     <p>
-                        After 2 and a half years, I transitioned to mobile development by building a native Android
-                        application in Java. This was followed by building a cross-platform mobile application
+                        After 2 and a half years, I transitioned to mobile development with a native Android
+                        application written in Java. This was followed by a cross-platform mobile application
                         using React native. 2 years into mobile development, I was a senior developer and was
                         leading the mobile division at Villvay until I eventually resigned in order pursue my own
-                        goals as a freelance developer.
+                        goals.
                     </p>
                 </div>
             </div>

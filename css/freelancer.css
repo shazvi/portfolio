@@ -192,6 +192,10 @@ section.success {
     section.first {
         padding-top: 75px;
     }
+
+    .skills-header {
+        margin-top: 25px;
+    }
 }
 
 #portfolio .portfolio-item {
