@@ -309,25 +309,28 @@ if(strpos($_SERVER["HTTP_HOST"], "localhost") === false) {
                     <div class="footer-col col-md-4 col-md-offset-2">
                         <h3>Talk to me</h3>
                         <ul class="list-inline">
-                            <li>
-                                <a target="_blank" title="shazvi@outlook.com" href="mailto:shazvi@outlook.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
+                            <li title="shazvi@outlook.com" data-toggle="tooltip">
+                                <a target="_blank" href="mailto:shazvi@outlook.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
                             </li>
-                            <li>
-                                <a title="shazvi.ahmed" href="skype:shazvi.ahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-skype"></i></a>
+                            <li title="shazvi.ahmed" data-toggle="tooltip">
+                                <a href="skype:shazvi.ahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-skype"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li title="facebook.com/shazvi.ahmed" data-toggle="tooltip">
                                 <a target="_blank" href="https://www.facebook.com/shazvi.ahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li>
+                            <!-- <li title="shazvi@outlook.com" data-toggle="tooltip">
                                 <a target="_blank" href="https://twitter.com/cybertox544" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li> -->
+                            <li title="linkedin.com/in/shazviahmed" data-toggle="tooltip">
+                                <a target="_blank" href="https://www.linkedin.com/in/shazviahmed" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                            <li>
-                                <a target="_blank" href="https://lk.linkedin.com/pub/shazvi-ahmed/a1/b0/a10" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <li title="github.com/shazvi" data-toggle="tooltip">
+                                <a target="_blank" href="https://github.com/shazvi" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
