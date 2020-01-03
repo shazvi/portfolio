@@ -4,6 +4,7 @@ if(strpos($_SERVER["HTTP_HOST"], "localhost") === false) {
         header('Location: https://shazvi.com');
     }
 }
+$myAge = floor((time() - strtotime("1989-04-27"))/31556926);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -183,7 +184,7 @@ if(strpos($_SERVER["HTTP_HOST"], "localhost") === false) {
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka (that little island south of India, for those unfamiliar). I'm <?php echo(floor((time() - strtotime("1989-04-27"))/31556926));//current age?> years old and while I have a background in accounting, I'm a tech enthusiast at heart with a passion for programming. </p>
+                    <p>Hello world. My name is Shazvi Ahmed and I'm from Sri Lanka (that little island south of India, for those unfamiliar). I'm <?php echo($myAge); ?> years old and while I have a background in accounting, I'm a tech enthusiast at heart with a passion for programming. </p>
                 </div>
                 <div class="col-lg-4">
                     <p>I've worked as a software developer for more than 4 years. During this time, I have acquired skills in various areas of software development ranging from backend, frontend and mobile development to project coordination and DevOps.</p>
