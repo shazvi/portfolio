@@ -1,5 +1,5 @@
-<?php
-if(strpos($_SERVER["HTTP_HOST"], "localhost") === false) {
+<?php 
+if(strpos($_SERVER["HTTP_HOST"], "shazvi.com") !== false) {
     if( !isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && ($_SERVER["HTTP_X_FORWARDED_PROTO"] != "https") ) {
         header('Location: https://shazvi.com');
     }
