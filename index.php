@@ -1,9 +1,9 @@
 <?php 
-if(strpos($_SERVER["HTTP_HOST"], "shazvi.com") !== false) {
-    if( !isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && ($_SERVER["HTTP_X_FORWARDED_PROTO"] != "https") ) {
-        header('Location: https://shazvi.com');
-    }
-}
+// if(strpos($_SERVER["HTTP_HOST"], "shazvi.com") !== false) {
+//     if( !isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && ($_SERVER["HTTP_X_FORWARDED_PROTO"] != "https") ) {
+//         header('Location: https://shazvi.com');
+//     }
+// }
 $myAge = floor((time() - strtotime("1989-04-27"))/31556926);
 ?>
 <!DOCTYPE html>
