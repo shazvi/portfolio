@@ -258,8 +258,8 @@ $myAge = floor((time() - strtotime("1989-04-27"))/31556926);
                         Initially, I was recruited as a backend developer and after working for one year in that
                         capacity, I took on the additional role of project coordinator along with backend duties. I
                         received plenty of positive feedback from the clients during this time, especially about my
-                        professionalism and transparency. Next up I worked on one more project as a backend
-                        developer for a complex fully-fledged social networking web app.
+                        professionalism and transparency. Next up I worked as a backend developer for a social
+                        networking web app written in Laravel/MySQL.
                     </p>
                     <p>
                         I then transitioned to a full stack role, working on a Angular2/Nodejs/expressJs/SQL web
